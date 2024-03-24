@@ -20,6 +20,7 @@
   },
   "homepage": "https://github.com/Azure-Samples/communication-services-web-calling-hero#readme",
   "dependencies": {
-    "rimraf": "^5.0.5"
+    "rimraf": "^5.0.5",
+    "ts-node": "^10.9.2"
   }
 }
