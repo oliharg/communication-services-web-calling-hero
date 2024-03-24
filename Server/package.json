@@ -4,6 +4,7 @@
   "private": true,
   "description": "This is the server side that supports all ACS sample applications",
   "scripts": {
+    "rimraf": "./node_modules/rimraf/bin.js",
     "build": "npm run clean && webpack --mode=production --env production",
     "clean": "rimraf dist",
     "start": "ts-node ./bin/www",
@@ -14,8 +15,7 @@
     "prettier:check": "prettier --no-error-on-unmatched-pattern --check --config ./.prettierrc --ignore-path=./.prettierignore \"**/*.js\" \"**/*.jsx\" \"**/*.ts\" \"**/*.tsx\"",
     "lint": "eslint */**/*.{ts,tsx}",
     "lint:fix": "eslint */**/*.{ts,tsx} --fix",
-    "lint:quiet": "eslint */**/*.{ts,tsx} --quiet",
-    "rimraf": "./node_modules/rimraf/bin.js"
+    "lint:quiet": "eslint */**/*.{ts,tsx} --quiet"
   },
   "dependencies": {
     "@azure/communication-chat": "1.4.0",
