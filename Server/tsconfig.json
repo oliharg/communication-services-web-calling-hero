@@ -17,6 +17,11 @@
     ],
     "resolveJsonModule": true,
   },
+  "ts-node": {
+    "compilerOptions": {
+    "module": "CommonJS"
+    }
+  },
   "include": ["src", "bin"],
   "exclude": [
     "dist",
